@@ -1,0 +1,96 @@
+/*stylesheet for Writeon!*/
+
+body {
+width:700px;
+margin-left: 150px;
+margin-right: 400px;
+color: #F0CEC4;
+background-color: #BD0B1B;
+ }
+ 
+#title{
+position: absolute;
+left: 150px;
+top:25px;
+width:700px;
+height:150px;
+background-image: url(images/title1.jpg);
+height: 300px;
+padding-bottom: 0px;
+}
+
+#title h1{
+font-family: trebuchet MS, sans-serif;
+color: #BD0B1B;
+
+position: relative;
+top: 186px;
+left: 10px;
+}
+
+#title img{
+position: relative;
+left: 20px;
+top: 25px;
+}
+
+#bodycontent {
+width: 690px;
+height: 560px;
+margin-top: 320px;
+color: #252525;
+background-color: #FFFFFF;
+padding-left: 10px;
+
+}
+ /*text background possibly: perhaps image frame: #D5775B */
+#bodycontent p {
+width: 450px;
+line-height: 1.8;
+font-family: trebuchet ms, sans-serif;
+font-size: 80%;
+padding-top: 70px;
+}
+
+#navbar1 {
+position: absolute;
+top: 320px;
+left: 649px;
+border-style: solid, 2px;
+border-color: #D4CCAE;
+color:#252525;
+padding-left: 15px;
+background-image: url(images/nav2.jpg);
+height: 500px;
+width: 185px;
+}
+#navbar1 h1 {
+font-size: 20pt;
+color: #FFFFFF;
+padding-left: 20px;
+font-family: trebuchet MS, sans-serif;
+}
+#navbar1 a {
+color: #FFFFFF;
+padding-left: 20px;
+font-family: trebuchet MS, sans-serif;
+line-height: 27px;
+}
+#navbar1 a:hover{
+color: #7F7F7F;
+}
+#navbar2{
+position: absolute;
+top: 225px;
+left: 647px;
+}
+
+#footer {
+position: absolute;
+top: 850px;
+right: 180px;
+font-family: trebuchet MS, sans-serif;
+color: #BD0B1B;
+font-size: 8pt;
+}
+

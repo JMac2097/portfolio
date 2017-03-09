@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles/style.css">
+		<!--FONT AWESOME-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	</head>
+	
+	<body>
+		<div class="head_top">
+				<div class="header">
+					<h1>Header</h1>
+						<div class="social_icons">
+								<a class="fb" href=""><i class="fa fa-facebook"></i></a>
+								<a class="twit" href=""><i class="fa fa-twitter"></i></a>
+								<a class="google" href=""><i class="fa fa-google-plus"></i></a>
+								<a class="instagram" href=""><i class="fa fa-instagram"></i></a>
+								
+						</div>
+				</div>
+			<div class="main_nav">
+				<a href="">Home</a>
+				<a href="">Home</a>
+				<a href="">Home</a>
+				<a href="">Home</a>
+				<a href="">Home</a>
+				<a href="">Home</a>
+			</div>
+		</div>
+			<div class="main_slider">
+			</div>
+			<div class="main_body_cont">
+			<div class="main_body">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit ac sapien sit amet auctor. 
+					Ut feugiat egestas purus quis malesuada. Quisque at ornare ipsum. Nullam consectetur, risus vel 
+					dictum congue, magna enim commodo massa, quis feugiat elit tortor ut tellus. Integer sagittis 
+					sollicitudin laoreet. Integer id ligula semper, porta mauris sit amet, laoreet tellus. Etiam ac nibh 
+					at mauris ultrices cursus nec vel dui. Nam euismod at ligula ac efficitur. Vestibulum malesuada 
+					et felis ac lobortis. Nulla efficitur dolor tellus, nec dictum libero molestie ac.</p>
+					
+					<p>Vestibulum pretium elit et volutpat luctus. Pellentesque nec tellus mauris. Sed ultricies lectus ex, 
+					eget sollicitudin ex faucibus vel. Proin cursus ante dui, non lobortis dui consectetur id. In hac habitasse 
+					platea dictumst. Proin in purus eleifend leo hendrerit congue. Phasellus sed dolor ut nisl bibendum 
+					hendrerit eu sit amet nulla. In a ex ipsum. Nulla facilisi.</p>
+
+					<p>Cras id metus tincidunt, maximus velit dapibus, congue sapien. Vestibulum posuere sollicitudin eleifend. 
+					Vivamus aliquam ex et elit pretium tincidunt sed vitae nunc. Integer metus quam, tempus in magna at, 
+					imperdiet elementum massa. Integer tristique magna porta ipsum tincidunt sodales. Sed ut enim maximus,
+					posuere lorem quis, dignissim elit. Aliquam aliquet lacinia ipsum sit amet ultricies. Aenean eleifend et mi in 
+					gravida. Praesent posuere venenatis sem vitae dapibus. Sed pretium pellentesque vulputate.</p>
+					
+						<div class="mid_section">
+						  <h3>Innovate...</h3>
+						  <h3>Build...</h3>
+						  <h3>Develop...</h3>
+						  <h3>Deliver...</h3>
+						</div>
+							<div class="lower_mid_section">
+									<div class="content_box">
+										<h2>Header 1</h2>
+										<img src="images/bully.jpg" alt="Bully"/>
+										<p>Cras id metus tincidunt, 
+										maximus velit dapibus, 
+										congue sapien</p>
+									</div>
+									<div class="content_box">
+										<h2>Header 2</h2>
+										<img src="images/bully.jpg" alt="Bully"/>
+										<p>Cras id metus tincidunt, 
+										maximus velit dapibus, 
+										congue sapien</p>
+									</div>
+									<div class="content_box">
+										<h2>Header 3</h2>
+										<img src="images/bully.jpg" alt="Bully"/>
+										<p>Cras id metus tincidunt, 
+										maximus velit dapibus, 
+										congue sapien</p>
+									</div>
+							</div>
+					<div class="clearboth"></div>
+			</div>
+			</div>
+		<div class="footer">
+			<div class="footer_cont">
+				<a href="">Home</a>
+				<a href="">Home</a>
+				<a href="">Home</a>
+				<a href="">Home</a>
+				<a href="">Home</a>
+				<a href="">Home</a>
+			</div>
+		</div>
+	</body>
+
+
+</html>

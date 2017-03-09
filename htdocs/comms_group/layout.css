@@ -1,0 +1,63 @@
+/*Stylesheet for test*/
+
+
+ 
+body{
+ 
+background-image: url(images\backblend.jpg); /*I can't get this GIF to link!!  I also tried: url(__css_test/images/backblend.gif);*/
+background-repeat:repeat-x;
+} 
+
+.content {
+background-image: url(images/backblend.jpg); /*I can't get this GIF to link!!  I also tried: url(__css_test/images/backblend.gif);*/
+background-repeat:repeat-x;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+}
+
+#logo1{
+float:left;
+}
+
+#logo2{
+ float:right;
+}
+
+.header{
+position:relative;
+top:10px;
+font-family:verdana, sans-serif;
+font-size:9pt;
+}
+
+#navigation{
+background-image: url(images/blockdefault.gif); /*Same problem as above*/
+background-repeat:repeat-x;
+ position:relative;
+ top:20px;
+ float:left;
+font-family: arial, sans serif;
+font-size: 12pt;
+}
+
+#navigation li{
+display:inline;
+padding-right:30px;
+}
+
+.banner {
+position:relative;
+top:20px;
+}
+
+#hotproducts{
+float:left;
+position:relative;
+bottom:10px;
+width:986px;
+}
+#hotproducts li{
+display: inline;
+padding-right:60px;
+}
