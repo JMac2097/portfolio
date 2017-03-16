@@ -15,12 +15,12 @@
 	</head>
 
     <body>
-        <div class="header-container">
+        <div class="top-container">
             <div class="nav-button">Menu</div>
 
         </div>
 
-        <div id="container">
+        <div id="container" style="padding: 30px;">
 
         </div>
 
@@ -51,19 +51,80 @@
                         </div>
                     )
                 }
-            })
-            
+            });
+            {/* Guitars Here */}
+            var Guitars = React.createClass({
+                render: function() {
+                    return (
+                        <div>
+                            <h2>Guitars</h2>
+                            <p>Here are some lovely guitars for you!</p>
+                        </div>
+                    );
+                }
+            });
+            {/* Basses here */}
+            var Basses = React.createClass({
+                render: function() {
+                    return (
+                        <div>
+                        <h2>GOT QUESTIONS?</h2>
+                        <p>The easiest thing to do is post on
+                        our <a href="http://forum.kirupa.com">forums</a>.
+                        </p>
+                        </div>
+                    );
+                }
+            });
+            {/* Used here */}
+            var Used = React.createClass({
+                render: function() {
+                    return (
+                        <div>
+                        <h2>Used Stuff</h2>
+                        <p>Things and stuff
+                        </p>
+                        <img src ="https://s-media-cache-ak0.pinimg.com/originals/7b/11/db/7b11dbc298a59fb56ffec7889011e0a2.jpg" />
+                        </div>
+                    );
+                }
+            });
+            {/* About here */}
+            var About = React.createClass({
+                render: function() {
+                    return (
+                        <div>
+                        <h2>About Us</h2>
+                        <p>About us details and ting
+                        </p>
+                        </div>
+                    );
+                }
+            });
+            {/* Contact here */}
+            var Contact = React.createClass({
+                render: function() {
+                    return (
+                        <div>
+                        <h2>Drop us a line</h2>
+                        <p>Get in touch why not.
+                        </p>
+                        </div>
+                    );
+                }
+            });
             var App = React.createClass({
                 render: function() {
                     return(
                         <div>
                             <h1>Guitars Unlimited</h1>
                             <ul className="header no-padding no-margin">
-                                <li><Link to="/">Guitars</Link></li>
-                                <li><Link to="/Basses">Basses</Link></li>
-                                <li><Link to="/Used">Used</Link></li>
-                                <li><Link to="/About">About Us</Link></li>
-                                <li><Link to="/Contact">Contact Us</Link></li>
+                                <li><IndexLink to="/" activeClassName="active">Home</IndexLink></li>
+                                <li><Link to="/Guitars" activeClassName="active">Guitars</Link></li>
+                                <li><Link to="/Basses" activeClassName="active">Basses</Link></li>
+                                <li><Link to="/Used" activeClassName="active">Used</Link></li>
+                                <li><Link to="/About" activeClassName="active">About Us</Link></li>
+                                <li><Link to="/Contact" activeClassName="active">Contact Us</Link></li>
                             </ul>
                             <div className="content">
                                 {this.props.children}
@@ -78,7 +139,11 @@
             <Router history={ReactRouter.hashHistory}>
                 <Route path="/" component={App}>
                 <IndexRoute component={Home}/>
-                
+                <Route path="Guitars" component={Guitars} />
+                <Route path="Basses" component={Basses} />
+                <Route path="Used" component={Used} />
+                <Route path="About" component={About} />
+                <Route path="Contact" component={Contact} />
                 </Route>
             </Router>,
             destination
@@ -99,7 +164,7 @@
         <script>
 
             $('.nav-button').click(function(){
-                $('.main-nav').slideToggle();
+                $('.header').slideToggle();
             });
             
         </script>
