@@ -6,21 +6,41 @@
         <title> -- Welcome to Guitars Unlimited -- </title>
         <link rel="stylesheet" href="styles/mainStyle.css">
         <link rel="stylesheet" href="styles/normalize.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	</head>
 
     <body>
         <div class="header-container">
+            <div class="nav-button">Menu</div>
             <h1>Guitars Unlimited</h1>
             <div class="main-nav">
-                <ul>
-                    <li>Guitars</li>
-                    <li>Basses</li>
-                    <li>Used</li>
-                    <li>About Us</li>
-                    <li>Contact Us</li>
+                <ul class="no-padding no-margin">
+                    <li><a href="#">Guitars</a></li>
+                    <li><a href="#">Basses</a></li>
+                    <li><a href="#">Used</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
                 </ul>
             </div>
         </div>
 
+        <div class="footer-container">
+            <ul class="footer-links">
+                <li><a href="#">Guitars</a></li>
+                <li><a href="#">Basses</a></li>
+                <li><a href="#">Used</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+
+        <script>
+
+            $('.nav-button').click(function(){
+                $('.main-nav').slideToggle();
+            });
+            
+        </script>
     </body>
 </html>
