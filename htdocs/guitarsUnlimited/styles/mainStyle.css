@@ -16,26 +16,17 @@
     padding: 10px;
 }
 
-.main-nav {
-    border: 1px solid #fff;
+ul.header {
+    background-color: #111;
 }
 
-.main-nav ul li {
-    border: 2px solid #fff;
-    width: 100%;
-    list-style: none;
-    padding: 17px;
-    box-sizing: border-box;
-}
-
-.main-nav ul li a,
-.footer-container ul li a {
-    font-size: 1.2em;
+ul.header li {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
     color: #fff;
-    text-decoration: none;
 }
 
-.footer-container {
-    background-color: #000;
+ul.header li a {
     color: #fff;
 }

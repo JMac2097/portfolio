@@ -26,21 +26,47 @@
 
         <script type="text/babel">
             var destination = document.querySelector("#container");
+            var {
+                Router,
+                Route,
+                IndexRoute,
+                IndexLink,
+                hashHistory,
+                Link
+            } = ReactRouter;
+
+            var Home = React.createClass({
+                render: function() {
+                    return (
+                        <div>
+                            <h2>HELLO</h2>
+                            <p>Cras facilisis urna ornare ex volutpat, et
+                            convallis erat elementum. Ut aliquam, ipsum vitae
+                            gravida suscipit, metus dui bibendum est, eget rhoncus nibh
+                            metus nec massa. Maecenas hendrerit laoreet augue
+                            nec molestie. Cum sociis natoque penatibus et magnis
+                            dis parturient montes, nascetur ridiculus mus.</p>
+  
+                            <p>Duis a turpis sed lacus dapibus elementum sed eu lectus.</p>
+                        </div>
+                    )
+                }
+            })
             
             var App = React.createClass({
                 render: function() {
                     return(
                         <div>
                             <h1>Guitars Unlimited</h1>
-                            <ul className="no-padding no-margin">
-                                <li>Guitars</li>
-                                <li>Basses</li>
-                                <li>Used</li>
-                                <li>About Us</li>
-                                <li>Contact Us</li>
+                            <ul className="header no-padding no-margin">
+                                <li><Link to="/">Guitars</Link></li>
+                                <li><Link to="/Basses">Basses</Link></li>
+                                <li><Link to="/Used">Used</Link></li>
+                                <li><Link to="/About">About Us</Link></li>
+                                <li><Link to="/Contact">Contact Us</Link></li>
                             </ul>
                             <div className="content">
-
+                                {this.props.children}
 
                             </div>
                         </div>
@@ -49,11 +75,12 @@
             });
 
             ReactDOM.render(
-            <ReactRouter.Router history={ReactRouter.hashHistory}>
-                <ReactRouter.Route path="/" component={App}>
+            <Router history={ReactRouter.hashHistory}>
+                <Route path="/" component={App}>
+                <IndexRoute component={Home}/>
                 
-                </ReactRouter.Route>
-            </ReactRouter.Router>,
+                </Route>
+            </Router>,
             destination
             );
         </script>
