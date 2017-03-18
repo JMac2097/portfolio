@@ -14,6 +14,15 @@ html, body {
     font-size: 14px;
 }
 
+#container {
+    margin-left: 0;
+    transition: margin 0.5s;
+}
+
+#container.addMargin {
+    margin-left: 100px;
+}
+
 .top-container {
     background-color: #000;
     color: #fff;
