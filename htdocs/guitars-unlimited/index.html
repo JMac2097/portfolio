@@ -1,0 +1,177 @@
+<!-- partial:partials/_header.html --><!DOCTYPE html><html><head><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>-- Welcome to Guitars Unlimited --</title><link rel="icon" type="image/png" href="img/favicon.ico" sizes="32x32"><link rel="stylesheet" href="css/app.css"><link href="https://fonts.googleapis.com/css?family=Anonymous+Pro" rel="stylesheet"><script src="https://unpkg.com/react@15.3.2/dist/react.js"></script><script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script><script src="https://npmcdn.com/react-router@3.0.2/umd/ReactRouter.min.js"></script></head><body><div class="top-container"><div class="nav-button">Menu</div></div><!-- partial --><div id="page-wrap"><div class="container-fluid"><div class="row"><div class="header-container"><div class="inner-container"><h1>Guitars Unlimited</h1></div></div></div></div><div class="container-fluid"><div class="row"><div class="inner-container"><div id="main-wrapper"></div></div></div></div></div><!-- End of page-wrap --><script type="text/babel">var destination = document.querySelector("#main-wrapper");
+            var {
+                Router,
+                Route,
+                IndexRoute,
+                IndexLink,
+                hashHistory,
+                Link,
+            } = ReactRouter;
+
+            var Home = React.createClass({
+                render: function() {
+                    return (
+                        <div>
+                            <h2>hello</h2>
+                            <img className="col-xs-5 col-sm-3 col-md-3 splitter" src ="http://ranguitars.com/artist/obscura/img/ran-guitars-obscura-08.jpg" />
+                            <p>Cras facilisis urna ornare ex volutpat, et
+                            convallis erat elementum. Ut aliquam, ipsum vitae
+                            gravida suscipit, metus dui bibendum est, eget rhoncus nibh
+                            metus nec massa. Maecenas hendrerit laoreet augue
+                            nec molestie. Cum sociis natoque penatibus et magnis
+                            dis parturient montes, nascetur ridiculus mus.</p>
+  
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Suspendisse vitae dapibus tortor. Cras in nunc vitae lorem 
+                            tincidunt finibus vitae sed diam. Orci varius natoque penatibus 
+                            et magnis dis parturient montes, nascetur ridiculus mus. Donec 
+                            in nisl lorem. Nam ac urna justo. Nullam ornare non nunc eu ornare. 
+                            Sed in ex finibus, vestibulum felis a, 
+                            euismod neque. Sed est leo, tempus quis fermentum vel, 
+                            ultricies a neque.</p>
+
+                            <p>Nulla aliquam a felis gravida vestibulum. Donec mattis 
+                            tincidunt risus vitae elementum. Phasellus interdum faucibus 
+                            tellus, placerat maximus arcu mattis eu. Vivamus auctor magna 
+                            non enim posuere condimentum. Cras semper id enim quis semper. 
+                            Integer viverra mattis vehicula. Etiam maximus ut ex non 
+                            interdum. Nulla dictum dapibus ex, quis dignissim justo. 
+                            Curabitur efficitur pulvinar tellus at aliquam. Integer 
+                            condimentum enim eget elit commodo aliquet. Sed tincidunt, 
+                            arcu eget ornare tempus, est lorem rutrum mi, et feugiat 
+                            lectus erat non sem. Sed aliquam ut risus at faucibus.</p>
+
+                        </div>
+                    )
+                }
+            });
+            {/* Guitars Here */}
+            var Guitars = React.createClass({
+                render: function() {
+                    return (
+                        <div>
+                            <h2>used stuff</h2>
+                            <p>Things and stuff
+                            </p>
+                            <div className="container-fluid">
+                                <div className="row">
+                                    <div className="inner-container">
+                                        <img className="col-xs-12 col-sm-6 col-md-3 splitter" src ="http://ranguitars.com/artist/obscura/img/ran-guitars-obscura-08.jpg" />
+                                        <img className="col-xs-12 col-sm-6 col-md-3 splitter" src ="http://ranguitars.com/artist/obscura/img/ran-guitars-obscura-08.jpg" />
+                                        <img className="col-xs-12 col-sm-6 col-md-3 splitter" src ="http://ranguitars.com/artist/obscura/img/ran-guitars-obscura-08.jpg" />
+                                        <img className="col-xs-12 col-sm-6 col-md-3 splitter" src ="http://ranguitars.com/artist/obscura/img/ran-guitars-obscura-08.jpg" />
+
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="inner-container">
+                                        <img className="col-xs-12 col-sm-6 col-md-3 splitter" src ="http://ranguitars.com/artist/obscura/img/ran-guitars-obscura-08.jpg" />
+                                        <img className="col-xs-12 col-sm-6 col-md-3 splitter" src ="http://ranguitars.com/artist/obscura/img/ran-guitars-obscura-08.jpg" />
+                                        <img className="col-xs-12 col-sm-6 col-md-3 splitter" src ="http://ranguitars.com/artist/obscura/img/ran-guitars-obscura-08.jpg" />
+                                        <img className="col-xs-12 col-sm-6 col-md-3 splitter" src ="http://ranguitars.com/artist/obscura/img/ran-guitars-obscura-08.jpg" />                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    );
+                }
+            });
+            {/* About here */}
+            var About = React.createClass({
+                render: function() {
+                    return (
+                        <div>
+                        <h2>got any questions?</h2>
+                        <div className="col-xs-12 col-md-6">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Aliquam ultrices tempor suscipit. Integer aliquam magna a risus vehicula, 
+                            sit amet mattis quam placerat. Pellentesque quis orci consequat, fringilla 
+                            velit vel, dapibus odio. Duis vehicula, tortor eu porttitor bibendum, 
+                            ligula ipsum ultricies magna, sit amet tristique lectus metus in lacus. 
+                            Etiam feugiat nibh at sodales maximus. Sed et nisl eu nunc vehicula 
+                            posuere eget at lorem. Phasellus porta neque ac luctus convallis. 
+                            Ut varius consectetur lectus, nec vehicula lectus sollicitudin a. 
+                            Etiam sagittis finibus sapien, sed pulvinar ex viverra in. 
+                            Sed eu velit ac ligula aliquet mattis vitae ut dui. Etiam 
+                            scelerisque blandit purus, at elementum neque lobortis sit amet. 
+                            Mauris sagittis eros sapien, non hendrerit ipsum imperdiet et. 
+                            Duis nunc sem, auctor vel arcu et, rutrum vestibulum sapien. 
+                            Curabitur.</p>
+                        </div>
+                        <div className="col-xs-12 col-md-6">
+                            <p>Vestibulum vel massa in purus iaculis faucibus. Morbi varius leo in 
+                            nisi elementum, in sagittis sapien dignissim. Aliquam erat volutpat. 
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
+                            per inceptos himenaeos. Sed sagittis nisi sed sem eleifend rhoncus. 
+                            Nam mattis sit amet mauris vitae gravida. Fusce et mollis massa, 
+                            non vestibulum dolor. Morbi sem ante, vulputate quis aliquet a, 
+                            hendrerit vel dolor. Pellentesque posuere urna tellus, vel consectetur 
+                            sem vestibulum vitae.</p>
+                            <p>
+                            Fusce porttitor pretium lectus in viverra. Nunc quis cursus nunc. 
+                            Integer nisl augue, posuere at metus lacinia, facilisis fermentum 
+                            mauris. Nulla vitae sapien egestas arcu finibus viverra. Maecenas 
+                            interdum risus sed laoreet porttitor. Donec finibus placerat 
+                            mauris. Nam faucibus semper sagittis. Curabitur porta pulvinar 
+                            est, in consectetur sem elementum suscipit. Aenean pulvinar 
+                            ex eu augue finibus, id pellentesque lectus eleifend.</p>
+                        </div>
+                    </div>
+
+                    );
+                }
+            });
+            {/* Contact here */}
+            var Contact = React.createClass({
+                render: function() {
+                    return (
+                        <div>
+                        <h2>contact us</h2>
+                            <div className="form-container">
+                                <div className="email-details">
+                                    You can email us at:
+                                    <span>guitarsunlimited@email.com</span>
+                                </div>
+                                <div className="phone-details">
+                                    Or give us a call on:
+                                    <span>01444 321456</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    );
+                }
+            });
+            var App = React.createClass({
+                render: function() {
+                    return(
+                        <div>
+                            <div className="main-nav">
+                                <ul className="no-padding no-margin">
+                                    <li><IndexLink to="/" activeClassName="active" data-role="page">Home</IndexLink></li>
+                                    <li><Link to="/Guitars" activeClassName="active" data-role="page">Guitars</Link></li>
+                                    <li><Link to="/About" activeClassName="active" data-role="page">About Us</Link></li>
+                                    <li><Link to="/Contact" activeClassName="active" data-role="page">Contact Us</Link></li>
+                                </ul>
+                                <div className="swipe-area"></div>
+                            </div>
+                            <div className="container-fluid">
+                                {this.props.children}
+
+                            </div>
+                        </div>
+                    )
+                }
+            });
+
+            ReactDOM.render(
+            <Router history={ReactRouter.hashHistory}>
+                <Route path="/" component={App}>
+                <IndexRoute component={Home}/>
+                <Route path="Guitars" component={Guitars} />
+                <Route path="About" component={About} />
+                <Route path="Contact" component={Contact} />
+                </Route>
+            </Router>,
+            destination
+            );</script><!-- partial:partials/_footer.html --><div class="footer-container"></div><script src="js/main-min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script></body></html><!-- partial -->
